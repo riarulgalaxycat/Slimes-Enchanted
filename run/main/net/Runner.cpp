@@ -78,6 +78,7 @@ int main() {
         crashed = true;
     }
 
+    //this is a example, so disable this during testing.
     cout << functions("Creation_Date","Day/Hour.Minute") << endl;
 
     if (test_game or override_test and !no_exit_Code) {
