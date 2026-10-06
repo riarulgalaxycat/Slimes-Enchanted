@@ -60,10 +60,6 @@ int main() {
         } else {
             cout << "Debug mode enabled" << endl;
         }
-        cout << debug_launch <<
-            test_game <<command_button <<chat_button <<player_list <<attack_and_break_button <<place_button <<quick_drop_button <<off_hand_button <<gui_scale <<
-                fullscreen <<sync <<blocky_lighting <<pixel_lighting <<fast_particles <<fast_events <<ray_lighting <<fast_loading <<
-                    load_resources_during_game_load <<no_timer <<no_exit_Code <<no_compress_test <<no_compress_result <<endl;
         cout << "Overide Debug?: " << override_debug << "\nOverride Test?: " << override_test << endl;
     }
 
