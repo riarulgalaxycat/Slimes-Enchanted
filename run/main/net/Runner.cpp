@@ -82,7 +82,7 @@ int main() {
         crashed = true;
     }
 
-    cout << functions("Creation_Date","Day/Hour.Minute");
+    cout << functions("Creation_Date","Day/Hour.Minute") << endl;
 
     if (test_game or override_test and !no_exit_Code) {
         if (crashed) {

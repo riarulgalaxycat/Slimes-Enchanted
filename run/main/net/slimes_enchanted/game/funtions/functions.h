@@ -9,11 +9,12 @@
 #include "functions_list.h"
 
 namespace se_functions {
-    static void functions(const std::string &need, const std::string &put) {
+    static string functions(const string &need, const string &put) {
         functions_list MCF;
-        const std::string Function = need;
-        const std::string Type = MCF.Functions = put;
+        const string Function = need;
+        const string Type = MCF.Functions = put;
 
-        std::cout << Function <<":" << Type;
+        string output =  Function + ":" + Type;
+        return output;
     }
 }
