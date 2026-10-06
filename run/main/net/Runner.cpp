@@ -11,8 +11,10 @@
 #include "slimes_enchanted/resources/save_data/compress.h"
 #include "slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "slimes_enchanted/resources/time.h"
+#include "slimes_enchanted/game/funtions/functions.h"
 
 using namespace std;
+using namespace se_functions;
 
 static bool compress = true;
 static bool crashed = false;
@@ -37,19 +39,19 @@ int main() {
 
         //This is a example how it works
         if (test_game or override_test and !no_compress_test) {
-            const string c1 = compresser("player", "data", compress, "name", "", "", "std", debug, no_compress_result);
-            const string c2 = compresser("player", "data", compress, "inv", "", "", "std", debug, no_compress_result);
-            const string c3 = compresser("player", "data", compress, "effects", "", "", "std", debug, no_compress_result);
-            const string c4 = compresser("player", "pos", compress, "x", "", "", "int", debug, no_compress_result);
-            const string c5 = compresser("player", "pos", compress, "y", "", "", "int", debug, no_compress_result);
-            const string c6 = compresser("player", "data", compress, "HP", "", "", "int", debug, no_compress_result);
-            const string c7 = compresser("player", "data", compress, "Armor", "", "", "int", debug, no_compress_result);
-            const string c8 = compresser("player", "data", compress, "Armor_boost", "", "", "int", debug, no_compress_result);
-            const string c9 = compresser("player", "data", compress, "Toughness", "", "", "int", debug, no_compress_result);
-            const string c10 = compresser("player", "data", compress, "Absorption", "", "", "int", debug, no_compress_result);
-            const string c11 = compresser("player", "data", compress, "Regeneration_Speed", "", "", "int", debug, no_compress_result);
-            const string c12 = compresser("player", "data", compress, "Speed", "", "", "int", debug, no_compress_result);
-            const string c13 = compresser("player", "data", compress, "Level", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "name", "", "", "std", debug, no_compress_result);
+            compresser("player", "data", compress, "inv", "", "", "std", debug, no_compress_result);
+            compresser("player", "data", compress, "effects", "", "", "std", debug, no_compress_result);
+            compresser("player", "pos", compress, "x", "", "", "int", debug, no_compress_result);
+            compresser("player", "pos", compress, "y", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "HP", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Armor", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Armor_boost", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Toughness", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Absorption", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Regeneration_Speed", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Speed", "", "", "int", debug, no_compress_result);
+            compresser("player", "data", compress, "Level", "", "", "int", debug, no_compress_result);
         }
     }
     if (debug) {
@@ -75,10 +77,12 @@ int main() {
 
 
     try {}
-    catch (const std::exception& e) {
-        cerr << "Fatal Error: " << e.what() << std::endl;
+    catch (const exception& e) {
+        cerr << "Fatal Error: " << e.what() << endl;
         crashed = true;
     }
+
+    cout << functions("Creation_Date","Day/Hour.Minute");
 
     if (test_game or override_test and !no_exit_Code) {
         if (crashed) {
