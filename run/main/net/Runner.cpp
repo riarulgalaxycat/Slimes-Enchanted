@@ -5,9 +5,7 @@
 #include <chrono>
 #include <iostream>
 
-#include "slimes_enchanted/resources/menu/settings/general.h"
 #include "slimes_enchanted/resources/menu/settings/others.h"
-#include "slimes_enchanted/resources/menu/settings/Controls/controls.h"
 #include "slimes_enchanted/resources/save_data/compress.h"
 #include "slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "slimes_enchanted/resources/time.h"
@@ -15,6 +13,7 @@
 
 using namespace std;
 using namespace se_functions;
+using namespace se_compress;
 
 static bool compress = true;
 static bool crashed = false;
