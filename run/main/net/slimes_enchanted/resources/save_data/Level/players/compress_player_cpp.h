@@ -218,7 +218,8 @@ inline string compress_player_cpp(
 
     if (un_or_compress) {
         const string compressed = compressString(input);
-        result.append(compressed);}
+        result.append(compressed);
+    }
     else {
         const string compressed = decompressString(input);
         result.append(compressed);

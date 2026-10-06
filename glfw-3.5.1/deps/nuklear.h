@@ -25513,7 +25513,7 @@ nk_tooltipfv(struct nk_context *ctx, const char *fmt, va_list args)
 /// - 2017/11/07 (2.00.3) - Fixed window size and position modifier functions.
 /// - 2017/09/14 (2.00.2) - Fixed `nk_edit_buffer` and `nk_edit_focus` behavior.
 /// - 2017/09/14 (2.00.1) - Fixed window closing behavior.
-/// - 2017/09/14 (2.00.0) - BREAKING CHANGE: Modifing window position and size funtions now
+/// - 2017/09/14 (2.00.0) - BREAKING CHANGE: Modifing window position and size functions now
 ///                        require the name of the window and must happen outside the window
 ///                        building process (between function call nk_begin and nk_end).
 /// - 2017/09/11 (1.40.9) - Fixed window background flag if background window is declared last.

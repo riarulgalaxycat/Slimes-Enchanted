@@ -15,14 +15,8 @@ set(CMAKE_CXX_STANDARD 17)
 #set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 #set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 #set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
-#set(SDL_TESTS OFF CACHE BOOL "" FORCE)
-#set(SDL_EXAMPLES OFF CACHE BOOL "" FORCE)
-#set(SDL_TEST_LIBRARY OFF CACHE BOOL "" FORCE)
 
 #FetchContent_MakeAvailable(glfw)
-#FetchContent_MakeAvailable(SDL3)
-#add_subdirectory(NovaLiteEngine)
-#add_subdirectory(third_party/SDL EXCLUDE_FROM_ALL)
 
 add_executable(Slimes_Enchanted
         run/main/net/Runner.cpp
@@ -47,5 +41,3 @@ add_executable(Slimes_Enchanted
 #        OpenGL::GL
 #)
 #target_include_directories(Slimes_Enchanted PUBLIC include)
-#target_link_libraries(Slimes_Enchanted PRIVATE novalite)
-#target_link_libraries(Slimes_Enchanted PRIVATE novalite SDL3::SDL3)

@@ -9,7 +9,7 @@
 #include "slimes_enchanted/resources/save_data/compress.h"
 #include "slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "slimes_enchanted/resources/time.h"
-#include "slimes_enchanted/game/funtions/functions.h"
+#include "slimes_enchanted/game/functions/functions.h"
 
 using namespace std;
 using namespace se_functions;
@@ -52,6 +52,10 @@ int main() {
             compresser("player", "data", compress, "Speed", "", "", "int", debug, no_compress_result);
             compresser("player", "data", compress, "Level", "", "", "int", debug, no_compress_result);
         }
+        //this is a example, so disable this two during testing.
+        cout << functions_string("Creation_Date","Day/Hour.Minute") << endl;
+        cout << functions_int("Creation_Date",63452) << endl;
+        //
     }
     if (debug) {
         if (!no_compress_result) {
@@ -76,9 +80,6 @@ int main() {
         cerr << "Fatal Error: " << e.what() << endl;
         crashed = true;
     }
-
-    //this is a example, so disable this during testing.
-    cout << functions("Creation_Date","Day/Hour.Minute") << endl;
 
     if (test_game or override_test and !no_exit_Code) {
         if (crashed) {
