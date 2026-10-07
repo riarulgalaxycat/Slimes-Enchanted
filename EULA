@@ -1,3 +1,4 @@
+English:
 -copying game:
   You can copy the game, but you have to give credit.
   You can publish the game.
@@ -17,3 +18,63 @@
   You can modify the game, can't do:(Crashing the game forcibly without a setting, Banning people from a world without a setting), can do:(fix bugs, modifying the game to be more optimized, 
 add textures/sounds/music/blocks/items/tools/dimensions/biomes/functions/structures/world settings/config/controls, changing biomes, make lore, change lore).
   You are liable for any damages the mod does.
+
+Español(Spanish):
+-Copiar el juego:
+Puedes copiar el juego, pero debes dar el crédito correspondiente.
+Puedes publicar el juego.
+Puedes asignar una licencia al juego.
+Asumes toda la responsabilidad sobre el juego.
+
+-Crear una bifurcación (fork):
+Puedes crear una bifurcación de este juego, pero debes cambiar los recursos (assets) y dar el crédito en el archivo "README".
+Puedes publicar la bifurcación.
+Puedes modificar o reemplazar la licencia.
+Asumes toda la responsabilidad sobre la bifurcación.
+
+-Modificar el juego (modding):
+Se permite crear modificaciones (mods) para el juego, ya sea programándolas tú mismo o utilizando software para ello.
+Puedes publicarlas de forma gratuita o de pago.
+Puedes asignar una licencia a la modificación.
+Puedes modificar el juego; acciones no permitidas: (provocar que el juego se cierre inesperadamente sin una opción de configuración, expulsar o banear a personas de un mundo sin una opción de configuración); acciones permitidas: (corregir errores, optimizar el juego, añadir texturas/sonidos/música/bloques/objetos/herramientas/dimensiones/biomas/características/estructuras/ajustes del mundo/configuración/controles, cambiar biomas, crear una historia o trasfondo, modificar la historia o el trasfondo).
+Eres responsable de cualquier daño causado por la modificación.
+
+日本語(Japanese):
+-ゲームの複製:
+適切な帰属表示（オリジナル制作者の明記）を行うことを条件に、本ゲームを複製することができます。
+本ゲームを公開することができます。
+本ゲームをライセンス供与することができます。
+本ゲームに関する一切の責任は、お客様が負うものとします。
+
+-フォーク（派生版の作成）:
+アセットを改変し、かつ「README」ファイルに帰属表示を記載することを条件に、本ゲームをフォーク（派生版を作成）することができます。
+フォークしたバージョンを公開することができます。
+ライセンスを変更、または別のライセンスに置き換えることができます。
+フォークに関する一切の責任は、お客様が負うものとします。
+
+-Modの作成:
+独自のコーディングまたは専用ソフトウェアの使用により、本ゲームのModを作成することが許可されます。
+Modを無料または有料で公開することができます。
+作成したModをライセンス供与することができます。
+本ゲームを改変することができます。禁止事項：ユーザーの設定なしに強制的にクラッシュさせること、ユーザーの設定なしにワールドからユーザーを排除すること。許可される事項：バグ修正、最適化のための改変、テクスチャ・音声・音楽・ブロック・アイテム・ツール・ディメンション・バイオーム・機能・構造物・ワールド設定・コンフィグ・操作方法の追加または変更、バイオームの改変、ゲームの伝承（ロア）や世界観の作成または変更。
+作成したModによって生じた損害については、お客様が責任を負うものとします。
+
+한국인(Korean):
+-게임 복사:
+게임을 복사할 수 있으나, 원작자를 명시해야 합니다.
+게임을 배포할 수 있습니다.
+게임에 라이선스를 적용할 수 있습니다.
+게임에 대한 모든 책임은 귀하에게 있습니다.
+
+-포크(Forking):
+이 게임을 포크(파생 버전 생성)할 수 있으나, 에셋(리소스)을 수정하고 "README" 파일에 원작자를 명시해야 합니다.
+포크된 버전을 배포할 수 있습니다.
+라이선스를 수정하거나 교체할 수 있습니다.
+포크된 버전에 대한 모든 책임은 귀하에게 있습니다.
+
+-모딩(Modding):
+직접 코딩하거나 관련 소프트웨어를 사용하여 게임 모드를 제작할 수 있습니다.
+모드를 무료 또는 유료로 배포할 수 있습니다.
+모드에 라이선스를 적용할 수 있습니다.
+게임을 수정할 수 있습니다. (금지된 행동: 관련 설정 없이 게임을 강제로 충돌하게 하는 행위, 관련 설정 없이 특정 사용자의 월드 접속을 차단하는 행위 / 허용된 행동: 버그 수정, 최적화, 텍스처/사운드/음악/블록/아이템/도구/차원/바이옴/기능/구조물/월드 설정/구성(config)/조작법의 추가 또는 변경, 바이옴 변경, 세계관(lore) 설정 또는 변경).
+모드로 인해 발생하는 모든 피해에 대한 책임은 귀하에게 있습니다.
