@@ -5,8 +5,10 @@
 
 #include <string>
 
+using namespace std;
+
 inline bool debug_launch = false;
 inline bool test_game = false;
 
-inline std::string debug_launch_text = "debug launch";
-inline std::string test_text = "test";
+inline string debug_launch_text = "debug launch";
+inline string test_text = "test";

@@ -5,27 +5,31 @@
 
 #include <chrono>
 
-const auto start = std::chrono::high_resolution_clock::now();
+using namespace std::chrono;
+
+const auto start = high_resolution_clock::now();
 
 inline auto time(const int need) {
         if (need == 1) {
                 return start;
         }
         if (need == 2) {
-                const auto end = std::chrono::high_resolution_clock::now(); return end;
+                const auto end = high_resolution_clock::now();
+                return end;
         }
         if (need == 3) {
-                const auto run_time = std::chrono::high_resolution_clock::now(); return run_time;
+                const auto run_time = high_resolution_clock::now();
+                return run_time;
         }
 }
 
 inline auto added_time(const int need) {
-        std::chrono::__enable_if_is_duration<std::chrono::milliseconds> duration;
+        __enable_if_is_duration<milliseconds> duration;
         if (need == 1) {
-                duration = std::chrono::duration_cast<std::chrono::milliseconds>(time(2) - start);
+                duration = duration_cast<milliseconds>(time(2) - start);
         }
         if (need == 2) {
-                duration = std::chrono::duration_cast<std::chrono::milliseconds>(time(3) - start);
+                duration = duration_cast<milliseconds>(time(3) - start);
         }
         return duration;
 }

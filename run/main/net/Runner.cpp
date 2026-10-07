@@ -6,16 +6,13 @@
 #include <iostream>
 
 #include "slimes_enchanted/resources/menu/settings/others.h"
-#include "slimes_enchanted/resources/save_data/compress.h"
 #include "slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "slimes_enchanted/resources/time.h"
 #include "slimes_enchanted/game/functions/functions.h"
 
 using namespace std;
 using namespace se_functions;
-using namespace se_compress;
 
-static bool compress = true;
 static bool crashed = false;
 static bool debug = false;
 static bool override_debug = true;
@@ -24,7 +21,7 @@ static bool override_test = true;
 int main() {
 
     ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    cin.tie(NULL);
 
     if (!no_timer) {
         time(1);
@@ -39,33 +36,15 @@ int main() {
 
     if (load_resources_during_game_load) {
 
-        //This is a example how it works
-        if (test_game or override_test and !no_compress_test) {
-            compresser("player", "data", compress, "name", "", "", "std", debug, no_compress_result);
-            compresser("player", "data", compress, "inv", "", "", "std", debug, no_compress_result);
-            compresser("player", "data", compress, "effects", "", "", "std", debug, no_compress_result);
-            compresser("player", "pos", compress, "x", "", "", "int", debug, no_compress_result);
-            compresser("player", "pos", compress, "y", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "HP", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Armor", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Armor_boost", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Toughness", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Absorption", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Regeneration_Speed", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Speed", "", "", "int", debug, no_compress_result);
-            compresser("player", "data", compress, "Level", "", "", "int", debug, no_compress_result);
-        }
+    }
+    if (debug) {
+        cout << "Debug mode enabled" << '\n';
+        
         //this is a example, so disable this two during testing.
         cout << functions_string("Creation_Date","Day/Hour.Minute") << '\n';
         cout << functions_int("Creation_Date",63452) << '\n';
         //
-    }
-    if (debug) {
-        if (!no_compress_result) {
-            cout << "(Compress? 1 = true, 0 = false)\n" << "Debug mode enabled" << '\n';
-        } else {
-            cout << "Debug mode enabled" << '\n';
-        }
+
         cout << "Override Debug?: " << override_debug << "\nOverride Test?: " << override_test << '\n';
     }
 
