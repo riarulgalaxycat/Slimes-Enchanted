@@ -243,7 +243,7 @@ inline string compress_player_cpp(
         if (
             GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof(pmc))
             ) {
-            cout << " | RAM Used: " << pmc.WorkingSetSize / 1000 << " KB" << endl;
+            cout << " | RAM Used: " << pmc.WorkingSetSize / 1000 << " KB" << '\n';
         }
     } else if(send_compress) {
         cout << result << endl;

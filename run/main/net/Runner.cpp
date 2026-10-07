@@ -23,6 +23,9 @@ static bool override_test = true;
 
 int main() {
 
+    ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
     if (!no_timer) {
         time(1);
     }
@@ -53,17 +56,17 @@ int main() {
             compresser("player", "data", compress, "Level", "", "", "int", debug, no_compress_result);
         }
         //this is a example, so disable this two during testing.
-        cout << functions_string("Creation_Date","Day/Hour.Minute") << endl;
-        cout << functions_int("Creation_Date",63452) << endl;
+        cout << functions_string("Creation_Date","Day/Hour.Minute") << '\n';
+        cout << functions_int("Creation_Date",63452) << '\n';
         //
     }
     if (debug) {
         if (!no_compress_result) {
-            cout << "(Compress? 1 = true, 0 = false)\n" << "Debug mode enabled" << endl;
+            cout << "(Compress? 1 = true, 0 = false)\n" << "Debug mode enabled" << '\n';
         } else {
-            cout << "Debug mode enabled" << endl;
+            cout << "Debug mode enabled" << '\n';
         }
-        cout << "Overide Debug?: " << override_debug << "\nOverride Test?: " << override_test << endl;
+        cout << "Override Debug?: " << override_debug << "\nOverride Test?: " << override_test << '\n';
     }
 
     if (!no_timer) {
@@ -71,13 +74,13 @@ int main() {
     }
 
     if (!no_timer and debug_launch) {
-        cout << "Task took " << added_time(1).count() << " milliseconds." << endl;
+        cout << "Task took " << added_time(1).count() << " milliseconds." << '\n';
     }
 
 
     try {}
     catch (const exception& e) {
-        cerr << "Fatal Error: " << e.what() << endl;
+        cerr << "Fatal Error: " << e.what() << '\n';
         crashed = true;
     }
 
@@ -88,7 +91,7 @@ int main() {
         else {
             cout << "Test exit code: 1.";
         }
-        cout << "\n" << "Test exit codes: 0=Closed Application, 1=Test Completed, 2=Crashed, 3=Game could not launch, 4=Failed a task(Movement(collision)aka Error: 1, Generation aka Error: 2, Locating Texture aka Error: 3. This is for the game running to aka [Running game error codes:]" << endl;
+        cout << "\n" << "Test exit codes: 0=Closed Application, 1=Test Completed, 2=Crashed, 3=Game could not launch, 4=Failed a task(Movement(collision)aka Error: 1, Generation aka Error: 2, Locating Texture aka Error: 3. This is for the game running to aka [Running game error codes:]" << '\n';
     }
 
     if (!no_timer) {
