@@ -1,11 +1,11 @@
 ## Goals:
-- [ ] Make the game playable in preview 2
-- [ ] Add account setup
-- [ ] Add sign in, and logout
-- [ ] code the game in C++ and C
-- [ ] make entity's
-- [ ] mobile support
-- [ ] linux support
+- Make the game playable in preview 2
+- Add account setup
+- Add sign in, and logout
+- code the game in C++ and C
+- make entity's
+- mobile support
+- Linux support
 
 ## Preview 1 Issues:
 - Performance
