@@ -6,7 +6,7 @@
 - [ ] make entity's
 - [ ] mobile support
 - [ ] linux support
----
+
 ## Preview 1 Issues:
 - Performance
 - UI 
