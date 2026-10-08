@@ -8,7 +8,7 @@
 
 #include "functions_list.h"
 
-namespace se_functions {
+namespace functions {
     static string functions_string(const string &need, const string& put) {
         functions_list MCF;
         const string Function = need;

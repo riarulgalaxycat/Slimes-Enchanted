@@ -30,6 +30,7 @@ add_executable(Slimes_Enchanted
         run/main/net/slimes_enchanted/resources/menu/settings/Controls/controls.h
         run/main/net/slimes_enchanted/resources/menu/settings/general.h
         run/main/net/slimes_enchanted/resources/time.h
+        run/main/net/slimes_enchanted/se.h
 )
 
 #target_link_libraries(

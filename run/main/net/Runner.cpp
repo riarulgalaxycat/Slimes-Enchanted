@@ -8,10 +8,9 @@
 #include "slimes_enchanted/resources/menu/settings/others.h"
 #include "slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "slimes_enchanted/resources/time.h"
-#include "slimes_enchanted/game/functions/functions.h"
+#include "slimes_enchanted/se.h"
 
-using namespace std;
-using namespace se_functions;
+using namespace se;
 
 static bool crashed = false;
 static bool debug = false;
@@ -20,8 +19,7 @@ static bool override_test = true;
 
 int main() {
 
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    game_start();
 
     if (!no_timer) {
         time(1);
@@ -34,9 +32,6 @@ int main() {
         debug = true;
     }
 
-    if (load_resources_during_game_load) {
-
-    }
     if (debug) {
         cout << "Debug mode enabled" << '\n';
         
@@ -57,7 +52,9 @@ int main() {
     }
 
 
-    try {}
+    try {
+
+    }
     catch (const exception& e) {
         cerr << "Fatal Error: " << e.what() << '\n';
         crashed = true;
@@ -83,7 +80,7 @@ int main() {
 
     if (crashed) {
         return EXIT_FAILURE;
-    } else {
+    } {
         return EXIT_SUCCESS;
     }
 }

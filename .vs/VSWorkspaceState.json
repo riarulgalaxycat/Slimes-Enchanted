@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\run",
+    "\\run\\main",
+    "\\run\\main\\net",
+    "\\run\\main\\net\\slimes_enchanted",
+    "\\run\\main\\net\\slimes_enchanted\\game",
+    "\\run\\main\\net\\slimes_enchanted\\resources",
+    "\\run\\main\\net\\slimes_enchanted\\resources\\menu",
+    "\\run\\main\\net\\slimes_enchanted\\resources\\saves",
+    "\\run\\main\\net\\slimes_enchanted\\resources\\save_data"
+  ],
+  "PreviewInSolutionExplorer": false
+}
