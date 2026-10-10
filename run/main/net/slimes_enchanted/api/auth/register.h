@@ -75,10 +75,8 @@ inline void register_file(const std::string& folderPath, const std::string& file
                 path = folderPath;
             }
 
-            // 4. Scan source and append unique lines
             int addedCount = 0;
             while (std::getline(file, line)) {
-                // If the line doesn't exist in the target file, add it
                 if (existingLines.find(line) == existingLines.end()) {
                     targetOut << line << "\n";
                     existingLines.insert(line);
