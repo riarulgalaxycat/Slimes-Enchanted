@@ -25,6 +25,9 @@ int main() {
         time(1);
     }
 
+    get_register("../run/main/net/slimes_enchanted/player_data","player_data.yml",
+        "Username:\nPassword:\nNickname:");
+
     if (fast_loading and !override_debug) {
         debug = false;
     }
