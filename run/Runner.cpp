@@ -5,10 +5,9 @@
 #include <chrono>
 #include <iostream>
 
-#include "slimes_enchanted/resources/menu/settings/others.h"
-#include "slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
-#include "slimes_enchanted/resources/time.h"
-#include "slimes_enchanted/se.h"
+#include "main/net/slimes_enchanted/resources/menu/settings/others.h"
+#include "main/net/slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
+#include "main/net/slimes_enchanted/se.h"
 
 using namespace se;
 
@@ -19,7 +18,8 @@ static bool override_test = true;
 
 int main() {
 
-    game_start();
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
 
     if (!no_timer) {
         time(1);

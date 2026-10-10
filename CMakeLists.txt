@@ -19,8 +19,7 @@ set(CMAKE_CXX_STANDARD 17)
 #FetchContent_MakeAvailable(glfw)
 
 add_executable(Slimes_Enchanted
-        run/main/net/Runner.cpp
-        run/main/net/slimes_enchanted/game_renderer.h
+        run/Runner.cpp
         run/main/net/slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h
         run/main/net/slimes_enchanted/resources/menu/settings/others.h
         run/main/net/slimes_enchanted/resources/menu/SinglePlayer/World_Creation/World_Settings/world_settings.h
@@ -31,6 +30,9 @@ add_executable(Slimes_Enchanted
         run/main/net/slimes_enchanted/resources/menu/settings/general.h
         run/main/net/slimes_enchanted/resources/time.h
         run/main/net/slimes_enchanted/se.h
+        run/main/net/slimes_enchanted/api/auth/register.h
+        run/main/net/slimes_enchanted/api/auth/login.h
+        run/main/net/slimes_enchanted/api/core.h
 )
 
 #target_link_libraries(
