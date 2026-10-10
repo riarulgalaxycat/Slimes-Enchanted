@@ -9,7 +9,7 @@
 #include "main/net/slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "main/net/slimes_enchanted/se.h"
 
-using namespace se;
+using namespace se::game_control;
 
 static bool crashed = false;
 static bool debug = false;
@@ -68,9 +68,20 @@ int main() {
             cout << "Test exit code: 2.";
         }
         else {
-            cout << "Test exit code: 1.";
+            if (_error_task) {
+                cerr << "Test exit code: " << 4 << '\n';
+                cerr << "error count: " << _error_count << '\n' << _reason << '\n';
+                if (!_path.empty()) {
+                    cerr << "path: " << _path << "\n";
+                }
+                if (!_file.empty()) {
+                    cerr << "file: " << _file << '\n';
+                }
+            } else {
+                cout << "Test exit code: 1.\n";
+            }
         }
-        cout << "\n" << "Test exit codes: 0=Closed Application, 1=Test Completed, 2=Crashed, 3=Game could not launch, 4=Failed a task(Movement(collision)aka Error: 1, Generation aka Error: 2, Locating Texture aka Error: 3. This is for the game running to aka [Running game error codes:]" << '\n';
+        cout << "Test exit codes: 0=Closed Application, 1=Test Completed, 2=Crashed, 3=Game could not launch, 4=Failed a task(Movement(collision)aka Error: 1, Generation aka Error: 2, Locating Texture aka Error: 3. This is for the game running to aka [Running game error codes:]" << '\n';
     }
 
     if (!no_timer) {

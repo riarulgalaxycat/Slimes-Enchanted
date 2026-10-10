@@ -11,20 +11,37 @@
 #include <iostream>
 
 namespace se {
-    using namespace std;
-    using namespace functions;
-    using namespace core_API;
-    using namespace timer;
-}
+    namespace game_control {
+        using namespace std;
+        using namespace functions;
+        using namespace core_API;
+        using namespace core_elements;
+        using namespace timer;
+    }
 
-namespace se_basic {
-    using namespace functions;
-    using namespace timer;
-}
+    namespace game {
+        using namespace std;
+        using namespace functions;
+        using namespace core_API;
+        using namespace timer;
+    }
 
-namespace se_API {
-    using namespace core_API;
-    using namespace functions;
+    namespace timer {
+        using namespace std;
+        using namespace functions;
+        using namespace timer;
+    }
+
+    namespace basic {
+        using namespace std;
+        using namespace functions;
+    }
+
+    namespace API {
+        using namespace std;
+        using namespace core_API;
+        using namespace functions;
+    }
 }
 
 #endif //SLIMES_ENCHANTED_SE_H

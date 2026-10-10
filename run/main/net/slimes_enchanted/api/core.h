@@ -8,9 +8,26 @@
 #include "auth/register.h"
 #include "auth/login.h"
 
+
+namespace core_elements {
+    inline bool _error_task = false;
+    inline string _reason = "";
+    inline string _path = "";
+    inline string _file = "";
+    inline int _error_count = 0;
+}
+
+using namespace core_elements;
+
 namespace core_API {
+
     inline void get_register(const std::string& folderPath, const std::string& fileName, const std::string& content) {
         register_file(folderPath,fileName, content);
+        _error_task = error_;
+        _error_count = errors;
+        _reason = reason;
+        _path = path;
+        _file = file;
     }
 
     inline void get_login() {
