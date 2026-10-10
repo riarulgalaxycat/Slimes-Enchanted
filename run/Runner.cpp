@@ -9,7 +9,7 @@
 #include "main/net/slimes_enchanted/resources/menu/settings/World/Optimations/Opti.h"
 #include "main/net/slimes_enchanted/se.h"
 
-using namespace se::game_control;
+using namespace se::game_core;
 
 static bool crashed = false;
 static bool debug = false;

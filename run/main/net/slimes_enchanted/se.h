@@ -11,7 +11,7 @@
 #include <iostream>
 
 namespace se {
-    namespace game_control {
+    namespace game_core {
         using namespace std;
         using namespace functions;
         using namespace core_API;
