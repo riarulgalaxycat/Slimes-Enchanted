@@ -9,6 +9,7 @@
 - [ ] make entity's
 - [ ] mobile support
 - [ ] Linux support
+- [ ] Not have a lot of bugs on release
 
 ## Preview 1 Issues:
 - Performance
