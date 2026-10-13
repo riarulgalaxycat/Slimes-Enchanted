@@ -9,11 +9,12 @@
 - [ ] make entity's
 - [ ] mobile support
 - [ ] Linux support
+- [ ] Not have a lot of bugs on release
 
 ## Preview 1 Issues:
 - Performance
 - UI
 - Bad music(except one)
 - Structured badly
-- Too much loops
+- Too much loops(Causes lag)
 - coded with blocks
