@@ -12,15 +12,15 @@
 
 namespace fs = std::filesystem;
 
-namespace register_file_error {
+namespace se_register_file_error {
     inline bool error_ = false;
-    inline string reason = "";
-    inline string file = "";
-    inline string path = "";
+    inline std::string reason = "";
+    inline std::string file = "";
+    inline std::string path = "";
     inline int errors;
 }
 
-using namespace register_file_error;
+using namespace se_register_file_error;
 
 inline void register_file(const std::string& folderPath, const std::string& fileName, const std::string& content) {
     try {
@@ -41,7 +41,7 @@ inline void register_file(const std::string& folderPath, const std::string& file
         } else {
             edit = true;
             if (file.is_open()) {
-                unordered_set<std::string> lines;
+                std::unordered_set<std::string> lines;
                 while (std::getline(file, line)) {
                     lines.insert(line);
                 }

@@ -10,12 +10,12 @@ class functions_list {
         // Custom&Natural Functions
         // std
             //Item
-        string Enchantments;
-        string Creator;
+        std::string Enchantments;
+        std::string Creator;
                 //Natural (1 Line)
-        string Creation_Date;
+        std::string Creation_Date;
             //All
-        string Functions;
+        std::string Functions;
 
         // int
             //Entity

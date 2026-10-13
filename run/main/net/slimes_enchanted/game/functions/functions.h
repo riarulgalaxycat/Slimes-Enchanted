@@ -8,21 +8,21 @@
 
 #include "functions_list.h"
 
-namespace functions {
-    static string functions_string(const string &need, const string& put) {
+namespace se_functions {
+    static std::string functions_string(const std::string &need, const std::string& put) {
         functions_list MCF;
-        const string Function = need;
-        const string Type = MCF.Functions = put;
+        const std::string Function = need;
+        const std::string Type = MCF.Functions = put;
 
-        string output =  Function + ":" + Type;
+        std::string output =  Function + ":" + Type;
         return output;
     }
-    static string functions_int(const string &need, const int64_t put) {
+    static std::string functions_int(const std::string &need, const int64_t put) {
         functions_list MCF;
-        const string Function = need;
-        const string Type = MCF.Functions = to_string(put);
+        const std::string Function = need;
+        const std::string Type = MCF.Functions = std::to_string(put);
 
-        string output =  Function + ":" + Type;
+        std::string output =  Function + ":" + Type;
         return output;
     }
 }
