@@ -25,12 +25,11 @@ int main() {
         se_timer::time(1);
     }
 
-    se_core_API::get_register("../run/main/net/slimes_enchanted/player_data","player_data.yml", "../run/main/net/slimes_enchanted/api/player/player_data.yml");
+    se_core_API::get_register("../run/main/net/slimes_enchanted/api/player_data","player_data.yml", "../run/main/net/slimes_enchanted/api/player/player_data.yml");
 
-    if (fast_loading and !override_debug) {
+    if (fast_loading and !override_debug and !debug_launch) {
         debug = false;
-    }
-    if (debug_launch or override_debug) {
+    } else {
         debug = true;
     }
 
@@ -47,10 +46,9 @@ int main() {
 
     if (!no_timer) {
         se_timer::time(2);
-    }
-
-    if (!no_timer and debug_launch) {
-        std::cout << "Task took " << se_timer::added_time(1).count() << " milliseconds." << '\n';
+        if (debug) {
+            std::cout << "Task took " << se_timer::added_time(1).count() << " milliseconds." << '\n';
+        }
     }
 
 
@@ -64,7 +62,7 @@ int main() {
 
     if (test_game or override_test and !no_exit_Code) {
         if (crashed) {
-            std::cout << "Test exit code: 2.";
+            std::cerr << "Test exit code: 2.";
         }
         else {
             if (se_core_elements::_error_task) {
@@ -80,14 +78,11 @@ int main() {
                 std::cout << "Test exit code: 1.\n";
             }
         }
-        std::cout << "Test exit codes: 0=Closed Application, 1=Test Completed, 2=Crashed, 3=Game could not launch, 4=Failed a task(Movement(collision)aka Error: 1, Generation aka Error: 2, Locating Texture aka Error: 3. This is for the game running to aka [Running game error codes:]" << '\n';
+        std::cout << "Test exit codes: 0=Closed Application, 1=Test Completed, 2=Crashed, 3=Game could not launch, 4=Failed a task(Movement(collision) Error: 1, Generation Error: 2, Locating Texture Error: 3. This is for the game running to aka [Running game error codes:]" << '\n';
     }
 
     if (!no_timer) {
         se_timer::time(3);
-    }
-
-    if (!no_timer) {
         std::cout << "run time " << se_timer::added_time(2).count() << " milliseconds." << std::endl;
     }
 
