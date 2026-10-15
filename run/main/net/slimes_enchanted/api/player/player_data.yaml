@@ -1,3 +1,8 @@
+version: 0.1
+replace:
+  replace_older_with_new: false
+  replace_newer_with_old: true
+  replace_lines_with_original: true
 Username:
 Nickname:
 Password:

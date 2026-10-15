@@ -86,11 +86,6 @@ inline void register_file(const std::string& folderPath, const std::string& file
 
             file.close();
             targetOut.close();
-
-
-            if (!error_) {
-                std::cout << "Sync complete. Added " << addedCount << " new lines to " << folderPath << "\n";
-            }
         }
 
     }
